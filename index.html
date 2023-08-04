@@ -59,13 +59,22 @@
 			<header id="header">
 				<div class="inner">
 				<style>
-  /* Apply styles to the image */
+  /* For desktop and larger screens */
   .image.avatar img {
     width: 160px; /* Set your desired width */
     height: 160px; /* Set your desired height */
     border-radius: 50%; /* Optional: To make the image circular */
     margin-left: -50px; /* Adjust this value to move the image left */
   }
+
+  /* For mobile and smaller screens */
+@media (max-width: 767px) {
+    .image.avatar img {
+        margin-left: 0; /* Reset the left margin */
+        display: block; /* Make the image a block element */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+}
 </style>
 <style>
   /* Add some space between "Data Science Professional" and the location */
